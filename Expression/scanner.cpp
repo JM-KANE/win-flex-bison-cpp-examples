@@ -1991,7 +1991,7 @@ void yyfree (void * ptr )
 #line 56 "scanner.l"
 
 
-yy::parser::symbol_type make_NUMBER(const std::string &s, const yy::parser::location_type& loc)
+yy::parser::symbol_type yy::scanner::make_NUMBER(const std::string &s, const yy::parser::location_type& loc)
 {
     auto n = std::stod(s);
     return yy::parser::make_NUMBER(n, loc);
